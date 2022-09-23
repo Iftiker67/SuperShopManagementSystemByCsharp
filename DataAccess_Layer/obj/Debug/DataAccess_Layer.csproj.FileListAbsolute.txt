@@ -1,0 +1,6 @@
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\DataAccess_Layer\bin\Debug\DataAccess_Layer.dll
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\DataAccess_Layer\bin\Debug\DataAccess_Layer.pdb
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\DataAccess_Layer\obj\Debug\DataAccess_Layer.csprojAssemblyReference.cache
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\DataAccess_Layer\obj\Debug\DataAccess_Layer.csproj.CoreCompileInputs.cache
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\DataAccess_Layer\obj\Debug\DataAccess_Layer.dll
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\DataAccess_Layer\obj\Debug\DataAccess_Layer.pdb
