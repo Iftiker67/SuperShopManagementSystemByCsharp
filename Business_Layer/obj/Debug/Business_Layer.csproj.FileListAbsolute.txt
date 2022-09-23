@@ -1,0 +1,9 @@
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\bin\Debug\Business_Layer.dll
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\bin\Debug\Business_Layer.pdb
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\obj\Debug\Business_Layer.csprojAssemblyReference.cache
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\obj\Debug\Business_Layer.csproj.CoreCompileInputs.cache
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\obj\Debug\Business_Layer.dll
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\obj\Debug\Business_Layer.pdb
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\bin\Debug\DataAccess_Layer.dll
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\bin\Debug\DataAccess_Layer.pdb
+C:\Users\Sabbir\Documents\Supershop\SuperShop_Management_System\Business_Layer\obj\Debug\Business_Layer.csproj.CopyComplete
