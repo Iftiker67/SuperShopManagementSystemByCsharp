@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C39F8405-2466-44C5-BB56-F963037DF10A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentation_Layer</RootNamespace>
+    <AssemblyName>Presentation_Layer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.14.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.14.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Dialog\ReturnDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialog\ReturnDialog.Designer.cs">
+      <DependentUpon>ReturnDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormUI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormUI\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormUI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormUI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormUI\POSTerminalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormUI\POSTerminalForm.Designer.cs">
+      <DependentUpon>POSTerminalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormUI\Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormUI\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddExpenses.Designer.cs">
+      <DependentUpon>PanelAddExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddSale.Designer.cs">
+      <DependentUpon>PanelAddSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelContactList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelContactList.Designer.cs">
+      <DependentUpon>PanelContactList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelPOSTerminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelPOSTerminal.Designer.cs">
+      <DependentUpon>PanelPOSTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelProfitLossReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelProfitLossReports.Designer.cs">
+      <DependentUpon>PanelProfitLossReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelPurchaseandSalesReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelPurchaseandSalesReports.Designer.cs">
+      <DependentUpon>PanelPurchaseandSalesReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelPurchaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelPurchaseList.Designer.cs">
+      <DependentUpon>PanelPurchaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormUI\RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormUI\RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddCategory.Designer.cs">
+      <DependentUpon>PanelAddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddProduct.Designer.cs">
+      <DependentUpon>PanelAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddToStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelAddToStock.Designer.cs">
+      <DependentUpon>PanelAddToStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelHome.Designer.cs">
+      <DependentUpon>PanelHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelReturn.Designer.cs">
+      <DependentUpon>PanelReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelReturnList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelReturnList.Designer.cs">
+      <DependentUpon>PanelReturnList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelSaleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelSaleList.Designer.cs">
+      <DependentUpon>PanelSaleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelStockTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelStockTransfer.Designer.cs">
+      <DependentUpon>PanelStockTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelViewProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanelUI\PanelViewProductList.Designer.cs">
+      <DependentUpon>PanelViewProductList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Dialog\ReturnDialog.resx">
+      <DependentUpon>ReturnDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormUI\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormUI\POSTerminalForm.resx">
+      <DependentUpon>POSTerminalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormUI\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelAddExpenses.resx">
+      <DependentUpon>PanelAddExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelAddSale.resx">
+      <DependentUpon>PanelAddSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelContactList.resx">
+      <DependentUpon>PanelContactList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelPOSTerminal.resx">
+      <DependentUpon>PanelPOSTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelProfitLossReports.resx">
+      <DependentUpon>PanelProfitLossReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelPurchaseandSalesReports.resx">
+      <DependentUpon>PanelPurchaseandSalesReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelPurchaseList.resx">
+      <DependentUpon>PanelPurchaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormUI\RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelAddProduct.resx">
+      <DependentUpon>PanelAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelAddToStock.resx">
+      <DependentUpon>PanelAddToStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelHome.resx">
+      <DependentUpon>PanelHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelReturn.resx">
+      <DependentUpon>PanelReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelReturnList.resx">
+      <DependentUpon>PanelReturnList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelSaleList.resx">
+      <DependentUpon>PanelSaleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelStockTransfer.resx">
+      <DependentUpon>PanelStockTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanelUI\PanelViewProductList.resx">
+      <DependentUpon>PanelViewProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business_Layer\Business_Layer.csproj">
+      <Project>{fdf7eb10-682d-4b30-bdc7-f9f791325c3d}</Project>
+      <Name>Business_Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
